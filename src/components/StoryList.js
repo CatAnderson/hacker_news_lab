@@ -4,7 +4,7 @@ import Story from './Story'
 const StoryList = ({ filteredStories, loaded }) => {
 
     if (!loaded) {
-        return <p> loading...</p>
+        return <p> initializing...</p>
     }
 
     const storyList = filteredStories.map((story) => {
