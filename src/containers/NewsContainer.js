@@ -14,7 +14,7 @@ const NewsContainer = () => {
             .then(res => res.json())
             .then(data => {
 
-                const newsStories = data.slice(0, 15).map((storyId) => {
+                const newsStories = data.slice(0, 30).map((storyId) => {
                     return fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json`)
                         .then(res => res.json())
                 });
@@ -29,11 +29,17 @@ const NewsContainer = () => {
         getStory();
     }, [])
 
+    const handleSelectChange = event => {
+        getStory(event.target.value);
+    }
+
 
     return (
         <>
             <h1>Hacker News Feed</h1>
-            <TitleBar />
+            <TitleBar
+                stories={stories}
+                loaded={loaded} />
 
 
             <StoryList

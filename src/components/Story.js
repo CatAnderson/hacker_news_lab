@@ -3,8 +3,9 @@ const Story = ({ story }) => {
     return (
         <>
             <li>
-                {/* <h3>{story.title}</h3> */}
+
                 <a href={story.url}>{story.title}</a>
+                <p>{story.score} points, story by {story.by}</p>
             </li>
         </>
     )
