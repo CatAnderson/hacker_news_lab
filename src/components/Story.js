@@ -1,8 +1,11 @@
-const Story = () => {
+const Story = ({ story }) => {
 
     return (
         <>
-            <h3>this is a hacker story</h3>
+            <li>
+                {/* <h3>{story.title}</h3> */}
+                <a href={story.url}>{story.title}</a>
+            </li>
         </>
     )
 }
