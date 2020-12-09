@@ -32,6 +32,8 @@ a{
   text-decoration: none;
   color: lime;
   font-size: 20px;
+  background: rgb(0,58,139);
+background: linear-gradient(0deg, rgba(0,58,139,1) 0%, rgba(19,19,17,1) 100%);
 }
 
 #cursor {
@@ -53,7 +55,7 @@ a{
 
 a:hover{
   background-color: lime;
-  color: black;
+  color: limegreen;
 
   box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;}
 
