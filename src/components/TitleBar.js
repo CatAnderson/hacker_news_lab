@@ -22,7 +22,7 @@ const TitleBar = ({ stories, loaded, handleSelectChange }) => {
 
     return (
         <>
-            <h2>This is the title bar</h2>
+            {/* <h2>This is the title bar</h2> */}
             <select onChange={handleSelectChange}>
                 {authorList}
             </select>

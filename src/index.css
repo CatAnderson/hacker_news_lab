@@ -1,22 +1,51 @@
 body {
+  font-family: 'Press Start 2P', cursive;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgb(14, 11, 11);
-  color: greenyellow; */
- 
+  background-color: rgb(14, 11, 11);
+  color: greenyellow;
+  text-align: center;
 }
-/* 
+
+h1{
+  font-size: 50px;
+}
+
+select{
+  background-color: greenyellow;
+  color: rgb(14, 11, 11);
+  padding: 10px 30px;
+  font-family: 'Press Start 2P', cursive;
+  /* font-style: bold; */
+}
+
 a{
+  border: 3px solid green;
+  padding: 4px;
   text-decoration: none;
   color: greenyellow;
+  font-size: 20px;
+}
 
-} */
+a:hover{
+  background-color: greenyellow;
+  color: black;
+  -webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+li{
+  list-style: none;
+}
+
+p{
+  font-size: 14px;
+  color: salmon;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: ‘Press Start 2P’, cursive;
 }
+
+
