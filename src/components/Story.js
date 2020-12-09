@@ -4,7 +4,7 @@ const Story = ({ story }) => {
         <><div >
             <li >
 
-                <a href={story.url} target="_blank">&#128190; {story.title}</a>
+                <a href={story.url} target="_blank">&#128240;  {story.title}</a>
                 <p >{story.score} points, story by {story.by}</p>
             </li>
         </div>
