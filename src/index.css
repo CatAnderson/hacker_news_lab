@@ -3,13 +3,19 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(14, 11, 11);
+  background-color: #222;
   color: lime;
   text-align: center;
 }
 
 h1{
   font-size: 50px;
+}
+
+#header {
+  display: inline-flex;
+  align-items: center;
+  margin: 15px;
 }
 
 select{
@@ -28,11 +34,14 @@ a{
   font-size: 18px;
 }
 
-#cursor{
+#cursor {
+  
   background: lime;
+  line-height: 17px;
+  margin-left: 3px;
   -webkit-animation: blink 0.8s infinite;
-  width: 7px;
-  height: 15px;
+  width: 37px;
+  height: 50px;
 }
 
 @keyframes blink {

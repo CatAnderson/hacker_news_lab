@@ -43,8 +43,7 @@ const NewsContainer = () => {
 
 
     return (
-        <>
-            <h1 >&#128240; Hacker News &#128187;</h1>
+        <><div id="header"> <h1 >Hacker News</h1> <div id="cursor"></div></div>
             <TitleBar
                 stories={stories}
                 loaded={loaded}
