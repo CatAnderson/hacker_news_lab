@@ -44,7 +44,7 @@ const NewsContainer = () => {
 
     return (
         <>
-            <h1>&#128240; Hacker News &#128187;</h1>
+            <h1 >&#128240; Hacker News &#128187;</h1>
             <TitleBar
                 stories={stories}
                 loaded={loaded}
