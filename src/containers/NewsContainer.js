@@ -6,6 +6,7 @@ const NewsContainer = () => {
 
     const [stories, setStories] = useState({})
     const [loaded, setLoaded] = useState(false);
+    const [filteredStories, setFilteredStories] = useState({})
     // const [selectedStoryId, setSelectedStoryId] = useState({})
 
 
@@ -19,7 +20,10 @@ const NewsContainer = () => {
                         .then(res => res.json())
                 });
                 Promise.all(newsStories)
-                    .then(stories => setStories(stories))
+                    .then(stories => {
+                        setStories(stories)
+                        setFilteredStories(stories)
+                    })
                     .then(() => setLoaded(true))
             })
 
@@ -30,7 +34,11 @@ const NewsContainer = () => {
     }, [])
 
     const handleSelectChange = event => {
-        getStory(event.target.value);
+        const filteredStories = stories.filter(story => {
+            return story.by === event.target.value
+        })
+        setFilteredStories(filteredStories)
+
     }
 
 
@@ -39,11 +47,12 @@ const NewsContainer = () => {
             <h1>Hacker News Feed</h1>
             <TitleBar
                 stories={stories}
-                loaded={loaded} />
+                loaded={loaded}
+                handleSelectChange={handleSelectChange} />
 
 
             <StoryList
-                stories={stories}
+                filteredStories={filteredStories}
                 loaded={loaded} />
         </>
     )

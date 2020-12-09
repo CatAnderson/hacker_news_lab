@@ -1,13 +1,13 @@
 import Story from './Story'
 
 
-const StoryList = ({ stories, loaded }) => {
+const StoryList = ({ filteredStories, loaded }) => {
 
     if (!loaded) {
         return <p> loading...</p>
     }
 
-    const storyList = stories.map((story) => {
+    const storyList = filteredStories.map((story) => {
         return (
             <Story story={story} key={story.id} />
         )

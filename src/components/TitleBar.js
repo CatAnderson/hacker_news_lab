@@ -1,4 +1,4 @@
-const TitleBar = ({ stories, loaded }) => {
+const TitleBar = ({ stories, loaded, handleSelectChange }) => {
 
 
     if (!loaded) {
@@ -23,10 +23,12 @@ const TitleBar = ({ stories, loaded }) => {
     return (
         <>
             <h2>This is the title bar</h2>
-            <select>
+            <select onChange={handleSelectChange}>
                 {authorList}
             </select>
         </>
+
+        // onChange on select, when that is selected it changes the storyList
     )
 }
 
