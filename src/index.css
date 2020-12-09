@@ -26,6 +26,16 @@ select{
   /* font-style: bold; */
 }
 
+
+button{
+  margin: 19px;
+  background-color: lime;
+  color: rgb(14, 11, 11);
+  padding: 10px 30px;
+  font-family: 'Press Start 2P', cursive;
+
+
+}
 a{
   border: 5px solid green;
   padding: 10px;

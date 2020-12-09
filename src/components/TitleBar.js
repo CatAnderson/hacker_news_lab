@@ -5,6 +5,10 @@ const TitleBar = ({ stories, loaded, handleSelectChange }) => {
         return <p> loading...</p>
     }
 
+    function refreshPage() {
+        window.location.reload(false);
+    }
+
 
     const authors = stories.map(story => {
         return story.by
@@ -26,6 +30,7 @@ const TitleBar = ({ stories, loaded, handleSelectChange }) => {
             <select onChange={handleSelectChange}>
                 {authorList}
             </select>
+            <button onClick={refreshPage}>RESET!</button>
         </>
 
         // onChange on select, when that is selected it changes the storyList
